@@ -17,6 +17,14 @@ then will be added into #app like that:
 </div>
 ```
 
+
+## how to inject values from child component to parent component
+
+```javascript
+this.$parent['name_of_variable'] = 'value of child';
+```
+
+
 # vue cli as framework
 ## Using Env Variables in Client-side Code
 https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code
