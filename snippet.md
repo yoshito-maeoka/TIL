@@ -24,3 +24,8 @@ then call:
 ```bash
 cat ~/.ssh/id_rsa.pub | ssh host_shortcut 'cat >> ~/.ssh/authorized_keys'
 ```
+
+```bash
+eval `ssh-agent -s`
+ssh-add ~/.ssh/id_rsa
+```
