@@ -3,8 +3,8 @@
 
 ```js
 new Vue([{
-  el:'#app', 
-  template:'<div>something to add </div>', 
+  el:'#app',
+  template:'<div>something to add </div>',
   replace: false
 });
 ```
