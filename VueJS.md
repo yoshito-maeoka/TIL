@@ -31,7 +31,7 @@ this.$parent['name_of_variable'] = 'value of child';
 ```
 then in handler:
 
-```ES6
+```javascript
   methods: {
     emitted(eventArgs, index) {
       console.log(index, eventArgs)
@@ -39,6 +39,21 @@ then in handler:
   },
 ```
 
+
+## v-model = (v-bind:value, v-on:input)
+
+```html
+<vue-input label="Input" name="input" v-model="form.input"></vue-input>
+```
+
+in component:
+```html
+<input ...
+       :value="value"
+       @input="updateValue"
+       ...
+/>
+```
 # vue cli as framework
 ## Using Env Variables in Client-side Code
 https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code
