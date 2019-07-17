@@ -25,6 +25,20 @@ this.$parent['name_of_variable'] = 'value of child';
 ```
 
 
+## give own parameter with calleing emit
+```html
+    <child :item='item' @emitting='emitted($event, index)'/>
+```
+then in handler:
+
+```ES6
+  methods: {
+    emitted(eventArgs, index) {
+      console.log(index, eventArgs)
+    }
+  },
+```
+
 # vue cli as framework
 ## Using Env Variables in Client-side Code
 https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code
@@ -41,6 +55,7 @@ it will return:
 ```
 YYY
 ```
+
 
 
 
