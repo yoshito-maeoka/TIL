@@ -44,3 +44,6 @@ YYY
 
 
 
+## debug test:unit
+"test:debug": "node --inspect-brk node_modules/.bin/vue-cli-service test:unit --no-cache --watch --runInBand"
+
