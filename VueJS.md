@@ -72,5 +72,8 @@ YYY
 ```
 
 
-
-
+## debug test:unit
+in package.json:
+```JSON
+"test:debug": "node --inspect-brk node_modules/.bin/vue-cli-service test:unit --no-cache --watch --runInBand"
+```
