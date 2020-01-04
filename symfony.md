@@ -10,3 +10,9 @@ then erase only app* files like that:
 ```
 $ rm -rf var/cache/dev/app*
 ```
+
+
+don't forget regenerate proxy class with following command:
+```
+php bin/console cache:warmup --no-debug  # warm up and generate the proxy classes
+```
