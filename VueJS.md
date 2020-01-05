@@ -25,6 +25,35 @@ this.$parent['name_of_variable'] = 'value of child';
 ```
 
 
+## give own parameter with calleing emit
+```html
+    <child :item='item' @emitting='emitted($event, index)'/>
+```
+then in handler:
+
+```javascript
+  methods: {
+    emitted(eventArgs, index) {
+      console.log(index, eventArgs)
+    }
+  },
+```
+
+
+## v-model = (v-bind:value, v-on:input)
+
+```html
+<vue-input label="Input" name="input" v-model="form.input"></vue-input>
+```
+
+in component:
+```html
+<input ...
+       :value="value"
+       @input="updateValue"
+       ...
+/>
+```
 # vue cli as framework
 ## Using Env Variables in Client-side Code
 https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code
@@ -43,7 +72,8 @@ YYY
 ```
 
 
-
 ## debug test:unit
+in package.json:
+```JSON
 "test:debug": "node --inspect-brk node_modules/.bin/vue-cli-service test:unit --no-cache --watch --runInBand"
-
+```
