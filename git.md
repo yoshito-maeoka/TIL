@@ -3,7 +3,7 @@
 git stash -p
 ```
 
-# use specific accoint on a specified project
+# use specific account on a specified project
 ```
 $ cd a_specified_prj
 $ git config user.name hogehoge
@@ -23,4 +23,11 @@ fatal: refusing to merge unrelated histories
 use with this options
 ```
 git merge <branch-name> --allow-unrelated-histories
+```
+
+
+# set the existing branch upstream branch.
+
+```
+git branch -u <remote>/<branch>
 ```
